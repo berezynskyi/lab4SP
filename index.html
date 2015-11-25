@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<head>
+	<h1>Lab 4 SP</h1>
+	<h2>Berezynskyi Maxym IO-32</h2>
+</head>
+<body ng-app="Lab4SP">
+    <div ng-controller="lab4Ctrl">
+    	<form ng-submit="submit()">
+			<div class="text"><textarea placeholder="Input" ng-model="strToParse" style="overflow-x: hidden; overflow-y: hidden; resize: none; width:340px;">{{strToParse}}</textarea></div>
+
+			<input name="button" type="submit" value="Send">
+		</form>
+
+    	<pre id="inner">Here will be a result</pre>
+    </div>
+</body>
+    <script src="./angular.js"></script>
+    <script src="./index.js"></script>
+    <script src="./tokens.js"></script>
+    <script src="./defineSymbol.js"></script>
+    <script src="./parse.js"></script>
+    <script src="./parseMathExpression.js"></script>
+    <script src="./printOut.js"></script>
+</html>
